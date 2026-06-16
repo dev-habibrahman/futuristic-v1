@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nebulix — next-generation infrastructure for AI-native teams. Build, scale, and orchestrate intelligent systems with deep-space speed." />
+  <meta name="theme-color" content="#05060f" />
+  <title>Nebulix — Infrastructure for the Intelligent Era</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Cosmic background -->
+  <div class="cosmos" aria-hidden="true">
+    <div class="cosmos__grid"></div>
+    <div class="cosmos__glow cosmos__glow--a"></div>
+    <div class="cosmos__glow cosmos__glow--b"></div>
+    <div class="cosmos__glow cosmos__glow--c"></div>
+    <canvas id="starfield" class="cosmos__stars"></canvas>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a href="#" class="nav__brand" aria-label="Nebulix home">
+      <svg class="nav__logo" viewBox="0 0 32 32" aria-hidden="true">
+        <defs>
+          <linearGradient id="lg1" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0%" stop-color="#7aa2ff"/>
+            <stop offset="100%" stop-color="#c084fc"/>
+          </linearGradient>
+        </defs>
+        <circle cx="16" cy="16" r="13" fill="none" stroke="url(#lg1)" stroke-width="1.4"/>
+        <circle cx="16" cy="16" r="4" fill="url(#lg1)"/>
+        <circle cx="27" cy="9" r="1.6" fill="#c084fc"/>
+      </svg>
+      <span class="nav__name">Nebulix</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#platform">Platform</a>
+      <a href="#metrics">Performance</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn--ghost nav__cta">Request access</a>
+    <button class="nav__menu" id="navMenu" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__inner">
+        <span class="eyebrow">
+          <span class="eyebrow__dot"></span>
+          New · Nebulix Core v4 is live
+        </span>
+        <h1 class="hero__title">
+          Infrastructure for the
+          <span class="grad-text">intelligent era</span>.
+        </h1>
+        <p class="hero__sub">
+          Nebulix is the orbital control plane for AI-native teams — deploy models,
+          orchestrate agents, and observe distributed intelligence at deep-space speed.
+        </p>
+        <div class="hero__cta">
+          <a href="#contact" class="btn btn--primary">
+            Launch a workspace
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 3.5 13 8l-4.5 4.5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#platform" class="btn btn--ghost">View the platform</a>
+        </div>
+
+        <ul class="hero__trust" aria-label="Trusted by">
+          <li>Orbital Labs</li>
+          <li>Helios AI</li>
+          <li>Lumen Robotics</li>
+          <li>Voyager Compute</li>
+          <li>Aether Systems</li>
+        </ul>
+      </div>
+
+      <!-- Orbit visual -->
+      <div class="orbit" aria-hidden="true">
+        <div class="orbit__ring orbit__ring--1"></div>
+        <div class="orbit__ring orbit__ring--2"></div>
+        <div class="orbit__ring orbit__ring--3"></div>
+        <div class="orbit__core"></div>
+        <span class="orbit__node orbit__node--1"></span>
+        <span class="orbit__node orbit__node--2"></span>
+        <span class="orbit__node orbit__node--3"></span>
+      </div>
+    </section>
+
+    <!-- CAPABILITIES -->
+    <section class="section" id="capabilities">
+      <header class="section__head">
+        <span class="eyebrow eyebrow--quiet">Capabilities</span>
+        <h2>Engineered for systems that think.</h2>
+        <p>A unified surface for compute, models, and agents — designed with the discipline of aerospace engineering.</p>
+      </header>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24"><path d="M4 7l8-4 8 4-8 4-8-4Zm0 5 8 4 8-4M4 17l8 4 8-4" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Distributed Compute Mesh</h3>
+          <p>Schedule workloads across GPU clusters with sub-millisecond routing and zero-cold-start inference.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.4" fill="none"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2" stroke="currentColor" stroke-width="1.4"/></svg>
+          </div>
+          <h3>Agent Orchestration</h3>
+          <p>Build deterministic multi-agent pipelines with typed contracts, retries, and full lineage tracing.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24"><path d="M3 12h4l3-7 4 14 3-7h4" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Realtime Observability</h3>
+          <p>Stream telemetry from every model, token, and tool call — surfaced in a single, calm interface.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4Z" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Sovereign Security</h3>
+          <p>Private VPC deployment, hardware-isolated tenants, and continuous SOC 2 + ISO 27001 alignment.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
+          </div>
+          <h3>Composable Primitives</h3>
+          <p>Vector stores, evals, queues, and tools — small parts, sharp edges, snap together cleanly.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4Zm9 4v10" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Edge Delivery</h3>
+          <p>180+ points of presence push intelligence within 30ms of every user on the planet.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PLATFORM SHOWCASE -->
+    <section class="section section--split" id="platform">
+      <div class="split__copy">
+        <span class="eyebrow eyebrow--quiet">The Platform</span>
+        <h2>One control plane.<br/>Every layer of intelligence.</h2>
+        <p>Nebulix replaces the brittle stack of glue scripts, dashboards, and notebooks with a single, opinionated surface — built for teams that ship.</p>
+        <ul class="check">
+          <li>Versioned model deployments with instant rollback</li>
+          <li>Typed agent runtime with structured failure modes</li>
+          <li>End-to-end evaluation suites built into CI</li>
+          <li>Policy-aware routing across providers and regions</li>
+        </ul>
+      </div>
+
+      <div class="console" role="img" aria-label="Nebulix console preview">
+        <div class="console__bar">
+          <span></span><span></span><span></span>
+          <p>nebulix · production</p>
+        </div>
+        <div class="console__body">
+          <div class="console__row">
+            <span class="dot dot--ok"></span>
+            <p><b>orchestrator-eu-west</b> · 12 agents healthy</p>
+            <span class="muted">2ms</span>
+          </div>
+          <div class="console__row">
+            <span class="dot dot--ok"></span>
+            <p><b>inference.gpu-h100</b> · 384/512 lanes</p>
+            <span class="muted">14ms</span>
+          </div>
+          <div class="console__row">
+            <span class="dot dot--warn"></span>
+            <p><b>vector.aurora</b> · rebalancing shards</p>
+            <span class="muted">38ms</span>
+          </div>
+          <div class="console__row">
+            <span class="dot dot--ok"></span>
+            <p><b>eval.nightly</b> · 1,284 cases passed</p>
+            <span class="muted">ok</span>
+          </div>
+          <div class="console__chart" aria-hidden="true">
+            <svg viewBox="0 0 320 80" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="cg" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#7aa2ff" stop-opacity=".6"/>
+                  <stop offset="100%" stop-color="#7aa2ff" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path d="M0 60 L30 50 L60 55 L90 35 L120 42 L150 25 L180 30 L210 18 L240 26 L270 14 L300 22 L320 10 L320 80 L0 80 Z" fill="url(#cg)"/>
+              <path d="M0 60 L30 50 L60 55 L90 35 L120 42 L150 25 L180 30 L210 18 L240 26 L270 14 L300 22 L320 10" fill="none" stroke="#a8c0ff" stroke-width="1.5"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS -->
+    <section class="section" id="metrics">
+      <header class="section__head">
+        <span class="eyebrow eyebrow--quiet">Performance</span>
+        <h2>Numbers from the field.</h2>
+      </header>
+      <div class="metrics">
+        <div class="metric"><b data-count="99.99" data-suffix="%">0%</b><p>Platform uptime across 14 regions</p></div>
+        <div class="metric"><b data-count="30" data-suffix="ms">0ms</b><p>Median inference latency, edge to edge</p></div>
+        <div class="metric"><b data-count="4.2" data-suffix="B">0</b><p>Agent steps executed per week</p></div>
+        <div class="metric"><b data-count="68" data-suffix="%">0%</b><p>Average cost reduction vs in-house</p></div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contact">
+      <div class="cta__inner">
+        <h2>Build what comes next.</h2>
+        <p>Join the engineering teams shaping the next decade of intelligent software. Early access cohorts open monthly.</p>
+        <form class="cta__form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Request received';">
+          <input type="email" required placeholder="you@company.com" aria-label="Work email" />
+          <button class="btn btn--primary" type="submit">Request access</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <svg class="nav__logo" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="13" fill="none" stroke="#7aa2ff" stroke-width="1.4"/>
+          <circle cx="16" cy="16" r="4" fill="#7aa2ff"/>
+        </svg>
+        <span>Nebulix</span>
+      </div>
+      <p class="footer__copy">© <span id="year"></span> Nebulix Systems, Inc. Built on Earth, for everything beyond.</p>
+      <div class="footer__links">
+        <a href="#">Privacy</a><a href="#">Terms</a><a href="#">Status</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
